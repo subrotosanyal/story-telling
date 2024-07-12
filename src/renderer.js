@@ -23,12 +23,13 @@ function displayStory(story) {
             storyContainer.appendChild(button);
         });
     }
+
     showSegment(currentIndex);
 }
 
 // Voice recognition setup
 const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-recognition.lang = 'en-US',
+recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
@@ -48,14 +49,15 @@ recognition.onerror = (event) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const story = new StoryLoader();
+    const storyLoader = new StoryLoader();
     try {
-        const story = story.loadStory('sampleStory');
+        const story = storyLoader.loadStory('sampleStory');
         displayStory(story);
     } catch (error) {
         console.error('Error loading story:', error);
         alert('Failed to load the story.');
     }
+
     const startButton = document.createElement('button');
     startButton.textContent = 'Start Voice Recognition';
     startButton.onclick = () => recognition.start();
