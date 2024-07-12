@@ -1,0 +1,45 @@
+{
+    "title": "The Brave Little Toaster",
+    "theme": "Adventure",
+    "content": [
+        {
+            "text": "Once upon a time, in a small house, there lived a brave little toaster.",
+            "choices": [
+                {
+                    "text": "Go on an adventure",
+                    "next": 1
+                },
+                {
+                    "text": "Stay at home",
+                    "next": 2
+                }
+            ]
+        },
+        {
+            "text": "The toaster decided to go on an adventure. It traveled far and wide, encountering many obstacles.",
+            "choices": [
+                {
+                    "text": "Fight the dragon",
+                    "next": 3
+                },
+                {
+                    "text": "Make friends with the dragon",
+                    "next": 4
+                }
+            ]
+        },
+        {
+            "text": "The toaster stayed at home and lived a quiet life. The end.",
+            "choices": []
+        },
+        {
+            "text": "The toaster fought the dragon and won. It became a hero. The end.",
+            "choices": []
+        },
+        {
+            "text": "The toaster made friends with the dragon and they went on many adventures together. The end.",
+            "choices": [
+            ]
+        }
+    ]
+}
