@@ -23,7 +23,7 @@ describe('Renderer', () => {
     };
 
     beforeEach(() => {
-        dom = new JSDOM(`!DOCTYPE html><body><div id="story-container"></div></body>` [object HTML]); 
+        dom = new JSDOM(`<!DOCTYPE html><body><div id="story-container"></div></body>`);
         global.document = dom.window.document;
         global.window = dom.window;
         container = document.getElementById('story-container');

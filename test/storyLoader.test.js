@@ -22,7 +22,7 @@ describe('StoryLoader', () => {
     test('loads story from JSON file', () => {
         const storyLoader = new StoryLoader();
         const storyId = 'sampleStory';
-        const storyPath = path.join(__dirname, ../ stories, ${storyId.json});
+        const storyPath = path.join(__dirname, '../stories', `${storyId}.json`);
         
         fs.existsSync.mockReturnValue(true);
         fs.readFileSync.mockReturnValue(Stringify(mockStory));
