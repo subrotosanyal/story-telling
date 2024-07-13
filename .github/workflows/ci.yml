@@ -29,3 +29,10 @@ jobs:
 
     - name: Build application
       run: npm run build
+
+    - name: Upload build artifacts
+      uses: actions/uplod-artifact@v2
+
+      with:
+        name: build-artifacts
+        path: build/
