@@ -4,10 +4,13 @@
   "description": "A storytelling application",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "echo \"Build script not defined\""
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.0"
+  }
 }
